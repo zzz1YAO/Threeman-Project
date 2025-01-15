@@ -1,22 +1,51 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网页</title>
+    <title>Our Team</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>欢迎来到我的个人网页</h1>
+        <h1>Meet Our Team</h1>
+        <p>广州市计算机最强三人组，具有无敌的代码编写能力，欢迎联系我们!</p>
     </header>
 
-    <section>
-        <h2>关于我</h2>
-        <p>你好！这是我的个人网页。我来自某地，喜欢编程，喜欢挑战。</p>
+    <section class="team">
+        <article class="member" onclick="showDetails('ziyao')">
+            <img src="ziyao.jpg" alt="Ziyao">
+            <h2>Ziyao</h2>
+            <p>Algorithm Specialist</p>
+        </article>
+
+        <article class="member" onclick="showDetails('hamster')">
+            <img src="hamster.jpg" alt="Hamster">
+            <h2>Hamster</h2>
+            <p>Designer</p>
+        </article>
+
+        <article class="member" onclick="showDetails('bridge')">
+            <img src="bridge.jpg" alt="Bridge">
+            <h2>Bridge</h2>
+            <p>Frontend & Backend Developer</p>
+        </article>
     </section>
 
+    <!-- Modal for showing team member details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-name">Ziyao</h2>
+            <p id="modal-position">Algorithm Specialist</p>
+            <p id="modal-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus elit eu nisi tincidunt, in viverra urna tempus.</p>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2025 我的个人网页</p>
+        <p>&copy; 2025 Our Team</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
