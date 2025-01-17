@@ -12,6 +12,34 @@
         <p>广州市计算机最强三人组，具有无敌的代码编写能力，欢迎联系我们!</p>
     </header>
 
+    <!-- 新增的项目展示部分 -->
+    <section class="projects">
+        <h2>我们的项目</h2>
+        <div class="project-container">
+            <button class="prev" onclick="prevProject()">&lt;</button>
+            <div class="project-content">
+                <div class="project" id="project-1">
+                    <h3>Project Alpha</h3>
+                    <img src="project-alpha.jpg" alt="Project Alpha">
+                    <p>这是Project Alpha的简介。它是一个创新的解决方案，用于优化数据处理流程。</p>
+                </div>
+                <div class="project" id="project-2">
+                    <h3>Project Beta</h3>
+                    <img src="project-beta.jpg" alt="Project Beta">
+                    <p>这是Project Beta的简介。它专注于用户体验设计，提升用户互动性。</p>
+                </div>
+                <div class="project" id="project-3">
+                    <h3>Project Gamma</h3>
+                    <img src="project-gamma.jpg" alt="Project Gamma">
+                    <p>这是Project Gamma的简介。它整合了前后端技术，打造高效的网络应用。</p>
+                </div>
+                <!-- 可以根据需要添加更多项目 -->
+            </div>
+            <button class="next" onclick="nextProject()">&gt;</button>
+        </div>
+    </section>
+    <!-- 项目展示部分结束 -->
+
     <section class="team">
         <article class="member" onclick="showDetails('ziyao')">
             <img src="ziyao.jpg" alt="Ziyao">
