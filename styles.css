@@ -102,6 +102,22 @@ header h1 {
     top: 10px;
     right: 20px;
 }
+
+/* Footer 样式 */
+footer {
+    text-align: center;          /* 文本居中 */
+    font-size: 0.9rem;           /* 调整字体大小 */
+    padding: 15px 0;             /* 上下内边距 */
+    background-color: #333;      /* 背景颜色，可根据需要调整 */
+    color: #fff;                 /* 字体颜色 */
+    position: fixed;             /* 固定在页面底部 */
+    width: 100%;                 /* 宽度占满整个视口 */
+    bottom: 0;                    /* 固定在视口底部 */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* 添加顶部阴影，增强层次感 */
+}
+
+
+
 /* 新增的项目展示部分样式 */
 
 /* Projects Section */
@@ -142,6 +158,7 @@ header h1 {
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .project h3 {
@@ -210,4 +227,85 @@ header h1 {
         padding: 8px 12px;
         font-size: 1.2rem;
     }
+}
+
+
+/* 项目详情页特定样式 */
+.project-page {
+    background-color: #f0f0f0; /* 示例背景颜色 */
+}
+
+.project-page header {
+    background-color: rgb(228, 148, 148); /* 项目页头部背景 */
+    margin: 5px 25%;
+    
+    
+}
+.header-container {
+    max-width: 1200px; /* 限制内容最大宽度 */
+    margin: 0 auto; /* 居中容器 */
+    padding: 0 20px; /* 左右内边距，防止内容紧贴边缘 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 居中对齐内容 */
+    text-align: center; /* 使标题和导航居中 */
+}
+
+.header-container h1 {
+    margin-bottom: 10px;
+    color: #fff; /* 文字颜色白色 */
+}
+
+
+
+/* 美化导航按钮 */
+.home-button {
+    text-decoration: none; /* 去除下划线 */
+    color: #fff; /* 字体颜色白色 */
+    background-color: #555; /* 背景颜色 */
+    padding: 10px 25px; /* 内边距 */
+    border-radius: 25px; /* 圆角，形成椭圆形按钮 */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 动画效果 */
+    font-weight: bold; /* 粗体 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 阴影 */
+}
+
+/* 悬停时按钮效果 */
+.home-button:hover {
+    background-color: #333; /* 悬停时背景颜色 */
+    transform: translateY(-3px); /* 悬停时轻微上移 */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* 悬停时阴影 */
+}
+
+
+.project-page main {
+    padding: 40px 20px;
+    
+}
+
+.project-page section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-page section img {
+    display: block; /* 将图片设为块级元素 */
+    margin: 0 auto; /* 水平居中 */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-page p {
+    font-size: 1.1rem;
+    color: #333;
+}
+.project-page footer p {
+    color: #fff;
 }

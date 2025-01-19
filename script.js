@@ -73,3 +73,10 @@ function prevProject() {
 
 // 初始化显示第一个项目
 document.addEventListener('DOMContentLoaded', updateProjectPosition);
+
+document.getElementById('textClassification').addEventListener('click', function() {
+    
+    
+    // 或者，在新的标签页中打开新页面
+    window.open('textClassification.html', '_blank');
+});
